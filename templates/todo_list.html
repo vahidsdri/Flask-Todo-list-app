@@ -3,7 +3,7 @@
 {% block content %}
 <ul>
 {% for todo in todos %}
-    <li>{{todo}}</li>
+    <li>{{todo[0]}} - {{todo[1]}}</li>
 {% endfor %}
 </ul>
 <p><a class="add--link" href="{{url_for('todo_add')}}"> + New Todo</a></p>
